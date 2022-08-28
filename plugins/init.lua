@@ -11,6 +11,10 @@ return {
       require "custom.plugins.lspconfig"
     end,
   },
-  ['ray-x/go.nvim'] = {},
+  ['ray-x/go.nvim'] = {
+    config = function ()
+      require('go').setup()
+    end
+  },
   ['ray-x/guihua.lua'] = {},
 }
